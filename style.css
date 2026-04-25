@@ -1287,7 +1287,7 @@ footer { background: var(--primary-dark); color: rgba(255,255,255,0.7); }
 /* RESPONSIVE*/
 @media (max-width: 1024px) {
   .about-grid { grid-template-columns: 1fr; gap: 3rem; }
-  .about-visual { max-width: 360px; margin: 0 auto; }
+  .about-visual { max-width: 360px; margin: unset; }
   .why-grid { grid-template-columns: repeat(2, 1fr); }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
   .footer-brand { grid-column: 1 / -1; }
@@ -1298,6 +1298,7 @@ footer { background: var(--primary-dark); color: rgba(255,255,255,0.7); }
 }
 
 @media (max-width: 768px) {
+  .service-card--wide {display: flex; flex-direction:column; }
   h1 {font-size: clamp(2.0rem, 5vw, 4rem);}
   .nav-links { display: none; }
   .hamburger { display: flex; }
