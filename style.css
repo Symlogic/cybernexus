@@ -199,6 +199,7 @@ section {
 }
 
 .loader-logo svg { animation: loader-pulse 1s ease-in-out infinite; }
+.loader-logo img { animation: loader-pulse 1s ease-in-out infinite; }
 
 @keyframes loader-pulse {
   0%, 100% { opacity: 0.6; transform: scale(0.95); }
