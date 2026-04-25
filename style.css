@@ -654,7 +654,7 @@ section {
   opacity: 0;
 }
 .service-detail.open {
-  max-height: 120px;
+  max-height: 150px;
   opacity: 1;
 }
 .service-detail p {
