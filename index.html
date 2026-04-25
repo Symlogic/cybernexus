@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO Meta Tags -->
+  <title>Cybernexus | Advanced IT, Cybersecurity & Data Services for Enterprise</title>
+  <meta name="description" content="Cybernexus delivers enterprise-grade cybersecurity, cloud data storage, IT infrastructure, and data protection services. Trusted by leading organizations worldwide." />
+  <meta name="keywords" content="cybersecurity, enterprise IT, data security, cloud backup, network infrastructure, IT consulting, data crypto-security, cybersecurity consulting" />
+  <meta name="author" content="Cybernexus" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Cybernexus | Advanced IT, Cybersecurity & Data Services" />
+  <meta property="og:description" content="Enterprise-grade cybersecurity, cloud storage, and IT infrastructure services. Protect what matters most." />
+  <meta property="og:image" content="https://cybernexus.gr/og-image.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://cybernexus.gr" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cybernexus | Advanced IT, Cybersecurity & Data Services" />
+  <meta name="twitter:description" content="Enterprise-grade cybersecurity, cloud storage, and IT infrastructure services." />
+  <meta name="twitter:image" content="https://cybernexus.gr/og-image.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Cybernexus",
+    "url": "https://cybernexus.gr",
+    "logo": "https://cybernexus.gr/logo.png",
+    "description": "Advanced IT, cybersecurity, and data services for enterprise clients.",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-800-NEXUS",
+      "contactType": "customer support",
+      "email": "info@cybernexus.com"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/cybernexus",
+      "https://twitter.com/cybernexus"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Cybersecurity & IT Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Enterprise Data Security" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cybersecurity & Data Crypto-security" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cloud Backup & Database Storage" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Data Processing & Network Infrastructure" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "IT Systems & Network Design" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cybersecurity Consulting" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Technical Support & Data Aggregation" } }
+      ]
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-logo">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 2L36 11V29L20 38L4 29V11L20 2Z" stroke="#328CC1" stroke-width="2" fill="none"/>
+          <path d="M20 8L30 14V26L20 32L10 26V14L20 8Z" fill="#0B3C5D" opacity="0.6"/>
+          <circle cx="20" cy="20" r="4" fill="#328CC1"/>
+        </svg>
+      </div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- Dark Mode Toggle -->
+  <button id="darkToggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+  </button>
+
+  <!-- HEADER / NAVIGATION  -->
+  <header id="header" role="banner">
+    <nav class="nav-container" aria-label="Main navigation">
+      <a href="#hero" class="logo" aria-label="Cybernexus Home">
+  <img src="logo.png" alt="Cybernexus" height="40" />
+</a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#why-us">Why Us</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#faq">FAQs</a></li>
+        <li><a href="#contact" class="nav-cta">Get Started</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu" role="navigation" aria-label="Mobile navigation">
+      <ul role="list">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#why-us">Why Us</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#faq">FAQs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+  <!-- HERO SECTION -->
+  <section id="hero" aria-label="Hero">
+    <div class="hero-bg" aria-hidden="true">
+      <canvas id="heroCanvas"></canvas>
+      <div class="hero-gradient"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="hero-content reveal">
+      <div class="hero-badge">
+        <span class="badge-dot" aria-hidden="true"></span>
+        Trusted by 200+ Enterprise Clients
+      </div>
+      <h1>Secure Your Digital<br /><span class="gradient-text">Infrastructure.</span><br />Empower Your Enterprise.</h1>
+      <p class="hero-sub">Advanced cybersecurity, data protection, and IT infrastructure services - engineered for organizations that cannot afford to compromise.</p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-primary">Get a Free Consultation</a>
+        <a href="#services" class="btn btn-ghost">Explore Services</a>
+      </div>
+      <div class="hero-stats" aria-label="Key statistics">
+        <div class="stat">
+          <span class="stat-number" data-target="99.9">0</span><span class="stat-unit">%</span>
+          <span class="stat-label">Uptime SLA</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat-number" data-target="200">0</span><span class="stat-unit">+</span>
+          <span class="stat-label">Enterprise Clients</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat-number" data-target="15">0</span><span class="stat-unit">+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" aria-labelledby="services-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What We Do</span>
+        <h2 id="services-heading">End-to-End Security &amp; IT Services</h2>
+        <p>From threat intelligence to infrastructure design, we cover every layer of your digital ecosystem.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <!-- Service 1 -->
+        <article class="service-card reveal" aria-label="Enterprise Data Security service">
+          <div class="service-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Enterprise Data Security</h3>
+          <p>Multi-layered data protection strategies including encryption, access control, DLP, and real-time threat monitoring tailored for enterprise-scale environments.</p>
+          <button class="service-expand" aria-expanded="false" aria-label="Learn more about Enterprise Data Security">
+            Learn more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+          <div class="service-detail" aria-hidden="true">
+            <p>Comprehensive audits, zero-trust architecture implementation, endpoint security, and 24/7 SOC operations to keep your data assets completely protected.</p>
+          </div>
+        </article>
+
+        <!-- Service 2 -->
+        <article class="service-card reveal" aria-label="Cybersecurity and Data Crypto-security service">
+          <div class="service-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h3>Cybersecurity &amp; Data Crypto-security</h3>
+          <p>Advanced cryptographic solutions, PKI management, end-to-end encryption protocols, and quantum-ready security frameworks to future-proof your data.</p>
+          <button class="service-expand" aria-expanded="false" aria-label="Learn more about Cybersecurity">
+            Learn more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+          <div class="service-detail" aria-hidden="true">
+            <p>Military-grade encryption, secure key management, digital signature infrastructure, and compliance-ready cryptographic implementations for regulated industries.</p>
+          </div>
+        </article>
+
+        <!-- Service 3 -->
+        <article class="service-card reveal" aria-label="Cloud Backup and Database Storage service">
+          <div class="service-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3>Cloud Backup &amp; Database Storage</h3>
+          <p>Geo-redundant cloud backup systems, automated disaster recovery, and enterprise database storage solutions with guaranteed data integrity and rapid restoration.</p>
+          <button class="service-expand" aria-expanded="false" aria-label="Learn more about Cloud Backup">
+            Learn more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+          <div class="service-detail" aria-hidden="true">
+            <p>Multi-cloud architecture, immutable backups, RPO/RTO optimization, and continuous data protection across hybrid environments with 99.99% durability.</p>
+          </div>
+        </article>
+
+        <!-- Service 4 -->
+        <article class="service-card reveal" aria-label="Data Processing and Network Infrastructure service">
+          <div class="service-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+          </div>
+          <h3>Data Processing &amp; Network Infrastructure</h3>
+          <p>High-performance data pipeline architecture, ETL systems, and enterprise network infrastructure equipment - from design to deployment and ongoing optimization.</p>
+          <button class="service-expand" aria-expanded="false" aria-label="Learn more about Data Processing">
+            Learn more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+          <div class="service-detail" aria-hidden="true">
+            <p>Real-time data processing, load balancing, SD-WAN implementation, and comprehensive hardware procurement for mission-critical network environments.</p>
+          </div>
+        </article>
+
+        <!-- Service 5 -->
+        <article class="service-card reveal" aria-label="IT Systems and Network Design service">
+          <div class="service-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="2"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+          </div>
+          <h3>IT Systems &amp; Network Design</h3>
+          <p>Comprehensive IT architecture consulting, bespoke network topology design, and end-to-end system development for scalable enterprise environments.</p>
+          <button class="service-expand" aria-expanded="false" aria-label="Learn more about IT Systems">
+            Learn more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+          <div class="service-detail" aria-hidden="true">
+            <p>Network segmentation, VLAN design, wireless enterprise rollout, and full lifecycle IT project management from requirements through commissioning.</p>
+          </div>
+        </article>
+
+        <!-- Service 6 -->
+        <article class="service-card reveal" aria-label="Cybersecurity Consulting service">
+          <div class="service-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Cybersecurity Consulting</h3>
+          <p>Strategic cybersecurity advisory, risk assessment, compliance frameworks (ISO 27001, SOC 2, GDPR), and incident response planning from certified experts.</p>
+          <button class="service-expand" aria-expanded="false" aria-label="Learn more about Cybersecurity Consulting">
+            Learn more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+          <div class="service-detail" aria-hidden="true">
+            <p>Vulnerability assessments, penetration testing, security culture training, board-level risk reporting, and regulatory compliance roadmaps for every industry sector.</p>
+          </div>
+        </article>
+
+        <!-- Service 7 -->
+        <article class="service-card service-card--wide reveal" aria-label="Technical Support service">
+          <div class="service-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Technical Support &amp; Data Aggregation</h3>
+          <p>24/7 expert technical support for specialized enterprise software, proprietary systems, and complex data aggregation pipelines - with guaranteed response SLAs and dedicated account engineers who understand your infrastructure inside out.</p>
+          <button class="service-expand" aria-expanded="false" aria-label="Learn more about Technical Support">
+            Learn more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+          <div class="service-detail" aria-hidden="true">
+            <p>Tier 1–3 support desk, proactive monitoring, automated alerting, and customized data aggregation from disparate sources into unified, actionable intelligence platforms.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual reveal" aria-hidden="true">
+          <div class="about-graphic">
+            <div class="about-hex-grid">
+              <div class="hex active"></div>
+              <div class="hex"></div>
+              <div class="hex active"></div>
+              <div class="hex"></div>
+              <div class="hex active"></div>
+              <div class="hex"></div>
+              <div class="hex active"></div>
+              <div class="hex"></div>
+              <div class="hex active"></div>
+            </div>
+            <div class="about-badge-float">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <span>ISO 27001 Certified</span>
+            </div>
+            <div class="about-badge-float about-badge-float--2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>SOC 2 Type II</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-content reveal">
+          <span class="section-tag">Who We Are</span>
+          <h2 id="about-heading">Built on a Decade of Digital Defense</h2>
+          <p>Cybernexus was founded on a single conviction: that enterprise organizations deserve cybersecurity and IT services that are as sophisticated as the threats they face. For over 15 years, our team of certified engineers, ethical hackers, and data architects has delivered mission-critical solutions to clients across finance, healthcare, government, and technology sectors.</p>
+          <p>We operate at the intersection of deep technical expertise and strategic business thinking - translating complex security challenges into clear, measurable outcomes for your organization.</p>
+          <div class="about-trust-signals">
+            <div class="trust-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              ISO 27001 &amp; SOC 2 Type II Certified
+            </div>
+            <div class="trust-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              GDPR &amp; HIPAA Compliance Ready
+            </div>
+            <div class="trust-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              150+ Certified Security Engineers
+            </div>
+            <div class="trust-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Global 24/7 Security Operations Center
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary">Learn More About Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section id="why-us" aria-labelledby="why-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Why Cybernexus</span>
+        <h2 id="why-heading">The Standard Other Firms Measure Themselves By</h2>
+        <p>We don't just protect infrastructure - we architect resilience.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card reveal">
+          <div class="why-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Uncompromising Security</h3>
+          <p>Zero-tolerance security posture with proactive threat hunting, real-time anomaly detection, and automated incident response across your entire digital estate.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3>Carrier-Grade Reliability</h3>
+          <p>99.9% SLA-backed uptime commitments, geo-redundant infrastructure, and failover systems engineered to eliminate single points of failure at every layer.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+          </div>
+          <h3>Infinite Scalability</h3>
+          <p>Cloud-native architecture and modular service delivery that grows seamlessly with your organization - from 50 to 50,000 endpoints without friction.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <h3>Deep Domain Expertise</h3>
+          <p>Our team holds CISSP, CISM, CEH, and AWS certifications. We bring practitioner-level expertise - not generalist consultants - to every engagement.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><circle cx="12" cy="12" r="10"/></svg>
+          </div>
+          <h3>Global Operations</h3>
+          <p>Presence across 12 countries, regional compliance expertise, and international data sovereignty solutions for multinational enterprise deployments.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>Transparent Reporting</h3>
+          <p>Executive dashboards, monthly security posture reports, and plain-language briefings that keep leadership informed without requiring technical expertise.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS SECTION -->
+  <section id="process" aria-labelledby="process-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">How It Works</span>
+        <h2 id="process-heading">From Assessment to Continuous Defense</h2>
+        <p>A structured engagement model that delivers value from day one.</p>
+      </div>
+      <div class="process-steps">
+        <div class="process-step reveal">
+          <div class="step-number" aria-hidden="true">01</div>
+          <div class="step-content">
+            <h3>Discovery &amp; Assessment</h3>
+            <p>We conduct a comprehensive audit of your current infrastructure, identifying vulnerabilities, compliance gaps, and risk exposure across all systems and data assets.</p>
+          </div>
+          <div class="step-connector" aria-hidden="true"></div>
+        </div>
+        <div class="process-step reveal">
+          <div class="step-number" aria-hidden="true">02</div>
+          <div class="step-content">
+            <h3>Strategic Architecture</h3>
+            <p>Our experts design a tailored security and IT blueprint - mapping controls, technologies, and processes to your specific business requirements and risk tolerance.</p>
+          </div>
+          <div class="step-connector" aria-hidden="true"></div>
+        </div>
+        <div class="process-step reveal">
+          <div class="step-number" aria-hidden="true">03</div>
+          <div class="step-content">
+            <h3>Implementation &amp; Deployment</h3>
+            <p>Precision rollout of approved solutions with minimal disruption, rigorous testing, and stakeholder training to ensure seamless adoption across your organization.</p>
+          </div>
+          <div class="step-connector" aria-hidden="true"></div>
+        </div>
+        <div class="process-step reveal">
+          <div class="step-number" aria-hidden="true">04</div>
+          <div class="step-content">
+            <h3>Continuous Monitoring</h3>
+            <p>24/7 SOC surveillance, automated threat intelligence, and proactive vulnerability scanning keep your defenses sharp as the threat landscape evolves.</p>
+          </div>
+          <div class="step-connector" aria-hidden="true"></div>
+        </div>
+        <div class="process-step reveal">
+          <div class="step-number" aria-hidden="true">05</div>
+          <div class="step-content">
+            <h3>Review &amp; Optimization</h3>
+            <p>Quarterly security reviews, performance benchmarking, and strategic roadmap updates ensure your security posture continuously improves and adapts to new challenges.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+<section id="faq" aria-labelledby="faq-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">FAQ</span>
+      <h2 id="faq-heading">Common Questions About Our Services</h2>
+      <p>Everything you need to know before starting your cybersecurity journey with us.</p>
+    </div>
+
+    <div class="faq-grid">
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">
+          <span>What industries do you serve?</span>
+          <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer" hidden>
+          <p>We serve enterprise clients across finance, healthcare, government, legal, manufacturing, and technology sectors. Our compliance expertise covers GDPR, HIPAA, PCI-DSS, ISO 27001, and SOC 2 - so regardless of your regulatory environment, we have the right framework for you.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">
+          <span>How quickly can you respond to a security incident?</span>
+          <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer" hidden>
+          <p>Our SOC operates 24/7/365 with a guaranteed initial response SLA of 15 minutes for critical incidents. Dedicated account engineers who already know your infrastructure are on call - not a generic helpdesk. For enterprise contracts we also offer on-site emergency response within 4 hours in major metropolitan areas.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">
+          <span>Do you offer penetration testing as a standalone service?</span>
+          <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer" hidden>
+          <p>Yes. We offer black-box, white-box, and grey-box penetration testing for networks, web applications, APIs, and cloud environments. Each engagement ends with a detailed report including an executive summary, CVSS-scored findings, and a prioritised remediation roadmap. Retesting after remediation is included.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">
+          <span>What does the onboarding process look like?</span>
+          <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer" hidden>
+          <p>After signing, you are assigned a dedicated account engineer within 24 hours. Week 1 is a structured discovery sprint - we map your environment, identify quick wins, and align on priorities. By week 3, monitoring is live and your custom security runbook is delivered. Most clients see measurable risk reduction within the first 30 days.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">
+          <span>Can you integrate with our existing tools and SIEM?</span>
+          <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer" hidden>
+          <p>Absolutely. We have pre-built integrations for Splunk, Microsoft Sentinel, IBM QRadar, CrowdStrike, SentinelOne, and all major cloud providers (AWS, Azure, GCP). If you run a custom or proprietary stack, our engineers build bespoke connectors. We complement your existing investments rather than replace them.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">
+          <span>How is pricing structured?</span>
+          <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer" hidden>
+          <p>We offer flexible models: fixed monthly retainers for managed services, project-based fees for consulting and assessments, and outcome-based pricing for larger transformations. After a free initial consultation we provide a transparent, itemised proposal with no hidden costs. There are no lock-in contracts beyond the agreed service term.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" aria-labelledby="contact-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Get In Touch</span>
+      <h2 id="contact-heading">Ready to Secure Your Enterprise?</h2>
+      <p>Speak with a senior security advisor today. No obligation - just an expert conversation about your challenges and how we can help.</p>
+    </div>
+
+    <div class="contact-body">
+
+      <div class="contact-intro reveal">
+        <p>Whether you are dealing with an active threat, planning a full security overhaul, or simply trying to understand where your vulnerabilities lie - we are here to help. Our team of certified engineers and consultants responds to every inquiry personally, not through automated pipelines.</p>
+        <p>We work with organizations of all sizes, from ambitious scale-ups to established enterprises. Every engagement starts with a free, no-pressure consultation where we listen first and recommend second. There is no one-size-fits-all in cybersecurity, and we treat every client accordingly.</p>
+        <p>Expect a response within one business day. For urgent security matters, mention it in your email subject line and we will prioritize accordingly.</p>
+      </div>
+
+      <div class="contact-card-row">
+
+        <div class="contact-card reveal">
+          <div class="contact-card-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div class="contact-card-content">
+            <span class="contact-card-label">Email Us Directly</span>
+            <a href="mailto:cybernexus-systems@outlook.com" class="contact-card-value">cybernexus-systems@outlook.com</a>
+            <p class="contact-card-note">We respond within one business day. For urgent matters, include "URGENT" in the subject line.</p>
+          </div>
+        </div>
+
+        <div class="contact-card reveal">
+          <div class="contact-card-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div class="contact-card-content">
+            <span class="contact-card-label">Response Time</span>
+            <span class="contact-card-value">Within 1 Business Day</span>
+            <p class="contact-card-note">Critical security incidents receive priority handling and a same-day response from our SOC team.</p>
+          </div>
+        </div>
+
+        <div class="contact-card reveal">
+          <div class="contact-card-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="contact-card-content">
+            <span class="contact-card-label">First Consultation</span>
+            <span class="contact-card-value">Always Free</span>
+            <p class="contact-card-note">No commitment required. We assess your situation and give you honest recommendations before any contract is signed.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="contact-cta-block reveal">
+        <p>Ready to take the first step?</p>
+        <a href="mailto:cybernexus-systems@outlook.com" class="btn btn-primary btn-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Send Us an Email
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#hero" class="logo" aria-label="Cybernexus Home">
+  <img src="logo.png" alt="Cybernexus" style="height:30px;" />
+</a>
+            <p>Advanced cybersecurity, IT infrastructure, and data services for the enterprise. Protecting what matters most.</p>
+            <div class="social-links" aria-label="Contact">
+  <a href="mailto:cybernexus-systems@outlook.com" aria-label="Send us an email">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+  </a>
+</div>
+          </div>
+
+          <nav class="footer-nav" aria-label="Services links">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#services">Enterprise Data Security</a></li>
+              <li><a href="#services">Crypto-security</a></li>
+              <li><a href="#services">Cloud Backup</a></li>
+              <li><a href="#services">Network Infrastructure</a></li>
+              <li><a href="#services">IT Systems Design</a></li>
+              <li><a href="#services">Cybersecurity Consulting</a></li>
+              <li><a href="#services">Technical Support</a></li>
+            </ul>
+          </nav>
+
+          <nav class="footer-nav" aria-label="Company links">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#why-us">Why Cybernexus</a></li>
+              <li><a href="#process">Our Process</a></li>
+              <li><a href="#faq">FAQs</a></li>
+              <li><a href="#contact">Careers</a></li>
+              <li><a href="#contact">Press</a></li>
+            </ul>
+          </nav>
+
+          <nav class="footer-nav" aria-label="Legal and contact links">
+            <h4>Legal &amp; Contact</h4>
+            <ul>
+              <li><a href="legal/#privacy">Privacy Policy</a></li>
+              <li><a href="legal/#terms">Terms of Service</a></li>
+              <li><a href="legal/#cookies">Cookie Policy</a></li>
+              <li><a href="legal/#disclosure">Security Disclosure</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Cybernexus. All rights reserved.</p>
+        <div class="footer-certs" aria-label="Certifications">
+          <span>ISO 27001</span>
+          <span>SOC 2 Type II</span>
+          <span>GDPR Ready</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky Mobile CTA -->
+  <div class="sticky-cta" id="stickyCta" aria-hidden="true">
+    <a href="#contact" class="btn btn-primary">Get a Free Consultation</a>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
